@@ -78,7 +78,7 @@ class ThemeColors extends ThemeExtension<ThemeColors> {
       buttonDoneColor: AppColors.blue);
   static const dark3 = ThemeColors(
       appBackgroundColor: AppColors.darkBrown,
-      buttonsColor: AppColors.darkBrown,
+      buttonsColor: AppColors.brown,
       cardBackground: AppColors.lightBrown2,
       buttonDoneColor: AppColors.brown);
 }

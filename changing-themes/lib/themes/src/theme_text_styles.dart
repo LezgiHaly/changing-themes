@@ -152,13 +152,13 @@ class ThemeTextStyles extends ThemeExtension<ThemeTextStyles> {
     bottomCardText:
         AppTypography.textText14Regular.copyWith(color: AppColors.white),
     modalBottonTitle:
-        AppTypography.textText18Blood.copyWith(color: AppColors.black),
+        AppTypography.textText18Blood.copyWith(color: AppColors.white),
     modalBottonThemeNames:
         AppTypography.textText16Regular.copyWith(color: AppColors.white),
     modalBottonColorScheme:
         AppTypography.textText14Regular.copyWith(color: AppColors.gray),
     schemeSelected:
-        AppTypography.textText16Regular.copyWith(color: AppColors.black),
+        AppTypography.textText16Regular.copyWith(color: AppColors.white),
     schemeUnSelected:
         AppTypography.textText16Regular.copyWith(color: AppColors.lightBlue),
     buttonDone:
@@ -173,13 +173,13 @@ class ThemeTextStyles extends ThemeExtension<ThemeTextStyles> {
     bottomCardText:
         AppTypography.textText14Regular.copyWith(color: AppColors.white),
     modalBottonTitle:
-        AppTypography.textText18Blood.copyWith(color: AppColors.black),
+        AppTypography.textText18Blood.copyWith(color: AppColors.white),
     modalBottonThemeNames:
         AppTypography.textText16Regular.copyWith(color: AppColors.white),
     modalBottonColorScheme:
         AppTypography.textText14Regular.copyWith(color: AppColors.gray),
     schemeSelected:
-        AppTypography.textText16Regular.copyWith(color: AppColors.black),
+        AppTypography.textText16Regular.copyWith(color: AppColors.white),
     schemeUnSelected:
         AppTypography.textText16Regular.copyWith(color: AppColors.lightBlue),
     buttonDone:
@@ -194,13 +194,13 @@ class ThemeTextStyles extends ThemeExtension<ThemeTextStyles> {
     bottomCardText:
         AppTypography.textText14Regular.copyWith(color: AppColors.white),
     modalBottonTitle:
-        AppTypography.textText18Blood.copyWith(color: AppColors.black),
+        AppTypography.textText18Blood.copyWith(color: AppColors.white),
     modalBottonThemeNames:
         AppTypography.textText16Regular.copyWith(color: AppColors.white),
     modalBottonColorScheme:
         AppTypography.textText14Regular.copyWith(color: AppColors.gray),
     schemeSelected:
-        AppTypography.textText16Regular.copyWith(color: AppColors.black),
+        AppTypography.textText16Regular.copyWith(color: AppColors.white),
     schemeUnSelected:
         AppTypography.textText16Regular.copyWith(color: AppColors.lightBlue),
     buttonDone:

@@ -9,7 +9,6 @@ import 'package:surf_flutter_courses_template/ui/widgets/color_scheme.dart';
 
 // Модальное окно выбора темы
 
-
 class ModalThemeMode extends StatefulWidget {
   const ModalThemeMode({super.key});
 
@@ -69,7 +68,7 @@ class _ModalThemeModeState extends State<ModalThemeMode> {
                     appTheme = value;
                   })),
           Visibility(
-            visible: appTheme == AppTheme.light ? true : false,
+            visible: appTheme == AppTheme.light,
             child: ShemesPanel(
               onSelectScheme: (scheme) =>
                   setState(() => selectedLightThemeExt = scheme),
@@ -89,7 +88,7 @@ class _ModalThemeModeState extends State<ModalThemeMode> {
                     appTheme = value;
                   })),
           Visibility(
-            visible: appTheme == AppTheme.dark ? true : false,
+            visible: appTheme == AppTheme.dark,
             child: ShemesPanel(
               onSelectScheme: (scheme) =>
                   setState(() => selectedLDarkThemeExt = scheme),

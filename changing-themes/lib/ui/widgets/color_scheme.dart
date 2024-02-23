@@ -4,6 +4,7 @@ import 'package:surf_flutter_courses_template/core/app_assets.dart';
 import 'package:surf_flutter_courses_template/core/app_string.dart';
 import 'package:surf_flutter_courses_template/themes/build_context_ext.dart';
 import 'package:surf_flutter_courses_template/themes/theme.dart';
+import 'package:surf_flutter_courses_template/ui/widgets/scheme_widget.dart';
 
 // Widget кнопок с цветовыми схемами
 
@@ -47,122 +48,57 @@ class _ShemesPanelState extends State<ShemesPanel> {
             children: [
               // Схема 1
 
-              GestureDetector(
+              SchemeWidget(
                 onTap: () {
                   widget.onSelectScheme?.call(widget.themeExts.first);
                   setState(() {
                     selectedIndex = 0;
                   });
                 },
-                child: SizedBox(
-                  width: 103,
-                  height: 70,
-                  child: DecoratedBox(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(6),
-                      border: Border.all(
-                        color: selectedIndex == 0
-                            ? AppColors.green
-                            : Colors.transparent,
-                      ),
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 10),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          SvgPicture.asset(AppAssets.icColor1),
-                          Text(
-                            AppString.scheme1,
-                            style: selectedIndex == 0
-                                ? context.text.schemeSelected
-                                : context.text.schemeUnSelected,
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                ),
+                icon: SvgPicture.asset(AppAssets.icColor1),
+                borderColor:
+                    selectedIndex == 0 ? AppColors.green : Colors.transparent,
+                title: AppString.scheme1,
+                textStyle: selectedIndex == 0
+                    ? context.text.schemeSelected
+                    : context.text.schemeUnSelected,
               ),
 
               // Схема 2
 
-              GestureDetector(
+              SchemeWidget(
                 onTap: () {
                   widget.onSelectScheme?.call(widget.themeExts[1]);
                   setState(() {
                     selectedIndex = 1;
                   });
                 },
-                child: SizedBox(
-                  width: 103,
-                  height: 70,
-                  child: DecoratedBox(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(6),
-                      border: Border.all(
-                        color: selectedIndex == 1
-                            ? AppColors.lightBlue1
-                            : Colors.transparent,
-                      ),
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 10),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          SvgPicture.asset(AppAssets.icColor2),
-                          Text(
-                            AppString.scheme2,
-                            style: selectedIndex == 1
-                                ? context.text.schemeSelected
-                                : context.text.schemeUnSelected,
-                          )
-                        ],
-                      ),
-                    ),
-                  ),
-                ),
+                icon: SvgPicture.asset(AppAssets.icColor2),
+                borderColor: selectedIndex == 1
+                    ? AppColors.lightBlue1
+                    : Colors.transparent,
+                title: AppString.scheme2,
+                textStyle: selectedIndex == 1
+                    ? context.text.schemeSelected
+                    : context.text.schemeUnSelected,
               ),
 
               // Схема 3
 
-              GestureDetector(
+              SchemeWidget(
                 onTap: () {
                   widget.onSelectScheme?.call(widget.themeExts[2]);
                   setState(() {
                     selectedIndex = 2;
                   });
                 },
-                child: SizedBox(
-                  width: 103,
-                  height: 70,
-                  child: DecoratedBox(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(6),
-                      border: Border.all(
-                        color: selectedIndex == 2
-                            ? AppColors.brown
-                            : Colors.transparent,
-                      ),
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 10),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          SvgPicture.asset(AppAssets.icColor3),
-                          Text(
-                            AppString.scheme3,
-                            style: selectedIndex == 2
-                                ? context.text.schemeSelected
-                                : context.text.schemeUnSelected,
-                          )
-                        ],
-                      ),
-                    ),
-                  ),
-                ),
+                icon: SvgPicture.asset(AppAssets.icColor3),
+                borderColor:
+                    selectedIndex == 2 ? AppColors.brown : Colors.transparent,
+                title: AppString.scheme3,
+                textStyle: selectedIndex == 2
+                    ? context.text.schemeSelected
+                    : context.text.schemeUnSelected,
               ),
             ],
           ),
