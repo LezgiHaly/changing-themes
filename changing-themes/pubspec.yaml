@@ -10,11 +10,21 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_svg: ^2.0.9
+  provider: ^6.1.1
+  shared_preferences: ^2.2.2
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.0
 
 flutter:
   uses-material-design: true
+  assets:
+    - asset\image\bronzeMedal.png
+    - asset\image\silverMedal.png
+    - asset\image\profileImage.png
+    - asset\image\goldMedal.png
+    - asset\icons\icColor1.svg
+    - asset\icons\icColor2.svg
+    - asset\icons\icColor3.svg
